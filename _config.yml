@@ -1,0 +1,93 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title:
+  English: Case Studies of Chinese Language Reformers
+  简体中文: 中国语言标准化现代化进程中的人与事
+  繁體中文: 中國語言標準化現代化進程中的人與事
+email: chinese.language.reformers@gmail.com
+description: #>- # this means to ignore newlines until "baseurl:"
+  English: This website is dedicated to the collection, research, and writings of the  people and events that lead to the standardization and modernization of present day Chinese.
+  简体中文: 此网站奉献给收集，研究，并撰写现代中国语言标准化现代化进程中的人与事。
+  繁體中文: 此網站奉獻給收集，研究，並撰寫現代中國語言標準化現代化進程中的人與事。
+index:
+  English:
+  简体中文: index-cn.html
+  繁體中文: index-tw.html
+navigation:
+  English: navigation
+  简体中文: navigation-cn
+  繁體中文: navigation-tw
+copyright:
+  English: ©Copyright 2018-2020 Yun Wang, Yingxian Wang & "Case Studies of Chinese Language Reformers" contributors.
+  简体中文: ©“中国语言标准化现代化进程中的人与事” 王昀，王颖先以及贡献者版权， 2018-2020。版权所有。
+  繁體中文: ©“中國語言標準化現代化進程中的人與事” 王昀，王穎先以及貢獻者版權， 2018-2020。版權所有。
+guest-comments:
+  English: _includes/guest_comments.html
+  简体中文: _includes/guest_comments-cn.html
+  繁體中文: _includes/guest_comments-tw.html
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://clangreformers.github.io" # the base hostname & protocol for your site, e.g. http://clangreformers.github.io
+plugins:
+  - jekyll-sitemap
+# twitter_username: jekyllrb
+github_username:  clangreformers
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      comments: true
+  -
+    scope:
+      path: "projects"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "project" # overrides previous default layout
+      author: "Mr. Example"
+
+markdown: kramdown
+
+# Build settings
+theme: minima
+#plugins:
+#  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

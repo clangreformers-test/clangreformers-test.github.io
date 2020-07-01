@@ -1,0 +1,27 @@
+- title: 首頁
+  output: web, pdf
+  url: /index-tw.html
+
+- title: 關於
+  url: /about-tw
+  output: web, pdf
+
+- title: 人物
+  url: /people/people-tw.html
+  output: web
+
+- title: 現代漢語標準
+  url: /standardization/standardization-tw
+  output: web
+
+- title: 現代漢語推廣
+  url: /teaching/teaching-tw
+  output: web
+
+- title: 課本與參考書
+  url: /dictionaries/dictionaries-tw
+  output: web
+
+- title: 我們
+  url: /who/who-tw.html
+  output: web
