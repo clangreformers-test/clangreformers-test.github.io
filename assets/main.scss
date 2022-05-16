@@ -74,20 +74,24 @@ nav a:hover {
 footer {
 
   position: relative;
-  border-bottom: 30px solid #A6A6A6;
+  //border-bottom: 30px solid #A6A6A6;
   position: relative;
   padding: 50px 0px;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 30px;
-    position: absolute;
-    bottom: -30px;
-    left: 0px;
-    background-color: #000;
-  }
+  background-image: url('/assets/images/footer.png');
+  background-repeat: repeat-x;
+  background-position: center center;
+
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   width: 150px;
+  //   height: 30px;
+  //   position: absolute;
+  //   bottom: -30px;
+  //   left: 0px;
+  //   background-color: #000;
+  // }
 }
 
 main {}
@@ -99,7 +103,10 @@ article {
 }
 
 
-body {}
+body {
+  background-color: #D2D5C8;
+
+}
 
 $brand-color:#4A5343;
 $brand-second:#457AAA;
@@ -274,13 +281,18 @@ img {
 .bottom {
   background-image: url('/assets/images/bottom.png');
   background-repeat: repeat-x;
+  margin: 30px 0px 30px 0px;
   padding: 30px;
-  display: flex;
-  margin: 70px 0px 70px 0px;
 
-  @media screen and (max-width: 991px) {
-    flex-wrap: wrap;
+  .bottom-box {
+    display: flex;
+
+    @media screen and (max-width: 991px) {
+      flex-wrap: wrap;
+    }
   }
+
+
 
 
   .left {
@@ -289,9 +301,9 @@ img {
     border-right: 1px solid #000;
     text-align: left;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
-    padding: 20px 20px 0px 0px;
+    padding: 10px 10px 0px 0px;
 
     @media screen and (max-width: 991px) {
       width: 100%;
@@ -299,6 +311,8 @@ img {
       padding: 0px;
 
       p {
+        font-size: 12px;
+
         br {
           display: none;
         }
@@ -311,12 +325,20 @@ img {
 
   .right {
     width: 100%;
-    padding: 20px 20px 20px 30px;
+    padding: 10px 10px 10px 10px;
 
     @media screen and (max-width: 991px) {
       padding: 0px 0px 0px 0px
     }
 
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .right-scroll {
+    overflow: auto;
+    max-height: 162px;
   }
 }
 
